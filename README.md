@@ -1,2 +1,0 @@
-# marsgravityx
-MarsGravityX Team
