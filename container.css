@@ -1,12 +1,18 @@
 div.column {
-    width: 120%;
+    width: 90%;
     height: 10%;
-    border: 1px solid gray;
+	border: 0px solid red;
 	display: flex;
 	flex-wrap: nowrap;
 	text-align: center;
 }
 
+
+.ul {
+	width: 50%;
+	height: 1%;
+	text-align: center;
+}
 
 .fixed{
 	width:13%;
@@ -21,11 +27,20 @@ div.column {
 h2{
     padding: 8px;
     color: white;
-    background-color: black;
+    background-color:;
     clear: left;
     text-align: right;
-	width: 200%;
+	width: 180%;
 	
+}
+
+h3{
+
+     padding: 8px;
+     color: white;
+     text-align: right;
+     clear: left;
+
 }
 
  footer {
