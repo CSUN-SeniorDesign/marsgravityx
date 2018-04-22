@@ -100,8 +100,8 @@ ga('send', 'pageview');
 </head>
 <body class="live-pages">
   <?php
-  include "/crack/db.php";
-  $recs = 'host=mgxdb.czyz5vvrbiy9.us-west-2.rds.amazonaws.com dbname=mgxdb user=slu625 password=P0stGresDataBa$e';
+  include("../crack/db.php");
+  
   $dbcon = pg_connect($recs);
   if(isset($_POST['submit'])) {
     $firstName = pg_escape_string($dbcon, $_POST['firstname']);

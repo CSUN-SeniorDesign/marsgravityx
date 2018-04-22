@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include "/crack/db.php"; ?>
+<?php include("../crack/db.php"); ?>
 <html>
 <body>
 <script type="script/javascript">
@@ -21,7 +21,7 @@
 
 
 <?php
-	$recs = 'host=mgxdb.czyz5vvrbiy9.us-west-2.rds.amazonaws.com dbname=mgxdb user=slu625 password=P0stGresDataBa$e';
+
 	$dbcon = pg_connect($recs) or die ("Cannot connect");
 	// Count number of clicks
 	/*if($_POST['sportsid'] > 0) {

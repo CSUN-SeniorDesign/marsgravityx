@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <?php
-include "/crack/db.php"; ?>
+include("../crack/db.php"); ?>
 <html>
 <head>
 <script async="" src="//www.google-analytics.com/analytics.js"></script>
@@ -85,7 +85,7 @@ include "/crack/db.php"; ?>
 <body class="live-pages">
 <?php
     /*include "/crack/db.php";*/
-  $recs = 'host=mgxdb.czyz5vvrbiy9.us-west-2.rds.amazonaws.com dbname=mgxdb user=slu625 password=P0stGresDataBa$e';
+  
 $dbcon = pg_connect($recs) or die("Cannnot connect");
 // If form submitted, insert values into the database.
 session_start();

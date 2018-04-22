@@ -151,11 +151,11 @@ background-color: lightgray;
 <body class="live-pages">
 
 <?php
-include  "/var/www/crack/db.php"; 
+include("../crack/db.php"); 
 // If form submitted, insert values into the database.
 //$gender = "";
 //IMPLEMENT EMAIL
-$recs = 'host=mgxdb.czyz5vvrbiy9.us-west-2.rds.amazonaws.com dbname=mgxdb user=slu625 password=P0stGresDataBa$e';
+
 if(isset($_POST['submit'])) {
 	$dbcon = pg_connect($recs) or die("Cannot connect");
 	$firstname = pg_escape_string($dbcon, $_POST['firstname']);

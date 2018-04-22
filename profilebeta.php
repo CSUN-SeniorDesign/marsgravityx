@@ -142,7 +142,7 @@ li {
 }
 </style>
 <!-- This code allows to change background image -->
-<!--<script>
+<script>
     $(switchBackground);
     var oFReader = new FileReader(),
         rFilter = /^(?:image\/bmp|image\/cis\-cod|image\/gif|image\/ief|image\/jpeg|image\/jpeg|image\/jpeg|image\/pipeg|image\/png|image\/svg\+xml|image\/tiff|image\/x\-cmu\-raster|image\/x\-cmx|image\/x\-icon|image\/x\-portable\-anymap|image\/x\-portable\-bitmap|image\/x\-portable\-graymap|image\/x\-portable\-pixmap|image\/x\-rgb|image\/x\-xbitmap|image\/x\-xpixmap|image\/x\-xwindowdump)$/i;
@@ -163,7 +163,7 @@ li {
       oFReader.readAsDataURL(oFile);
     }
 	
-</script>-->
+</script>
 <script>
 $(function () {    
     $('.delete').click(function () {
@@ -243,7 +243,7 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 }
 </script>
-	
+
 <!-- right portion of navbar -->
 
 <ul class="nav navbar-nav navbar-right">
@@ -272,14 +272,13 @@ function closeNav() {
 ?>
 <img src="<?php echo $picture_to_show; ?>"  width="35" />
 
-	
+
 	<!--
 	<a class="navbar-brand" rel="home" href="#" title="Profile">
         <img style="max-width:40px; margin-top: -10px;"
              src="circle.png">
     </a> --> 
 </div>
-
 
 <!-- Settings/dropdown menu for later editing -->
  <div class="navbar-header">
@@ -288,16 +287,18 @@ function closeNav() {
        <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="setting.php">Settings</a></li>
+      <li role="presentation"><a align="left" role="menuitem" tabindex="-1" href="setting.php">Settings</a></li>
       <li role="presentation" class="divider"></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+      <li role="presentation"><a align="left" role="menuitem" tabindex="-1" href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+		<li role="presentation" class="divider"></li>
+	  <li role="presentation"><input class="custom-file-input" role="menuitem" id="changeBackground" type="file" onchange="loadImageFile(this)"></li>
     </ul>
   </div>
 
       </ul>
 
 	<br>
-	<input id="test" type="file" onchange="loadImageFile(this)" />
+
   </div>
 </nav>
 
