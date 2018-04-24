@@ -1,11 +1,13 @@
 <?php
-include("/crack/db.php");
+include("../crack/db.php");
+
 session_start();
+$dbcon = pg_connect($recs) or die ("Cannot connect");
 $user_check=$_SESSION['username'];
  
-$sql = pg_query($db,"SELECT username FROM users WHERE username='$user_check' ");
+$sql = pg_query($dbcon,"SELECT username FROM users WHERE username='$user_check' ");
  
-$row=pg_fetch_array($sql,pg_fetch_assoc);
+$row=pg_fetch_array($sql);
  
 $login_user=$row['username'];
  
