@@ -4,32 +4,6 @@
 
 <!DOCTYPE html>
 <html>
-
-
-<script type="text/javascript">
-	window._S_T ||
-	(function(d, css){
-		var c = d.createElement('style'),
-			s = d.createElement('script'),
-			u = s.onload===undefined && s.onreadystatechange===undefined,
-			r = function() {c.parentNode && h.removeChild(c)},
-			i = 0,
-			l = function(t) {t.async=t.blocking=true; t.reg_ondropcss(r); t.setup(4087, "marsgx.com *.marsgx.com")},
-			f = function() {window._S_T ? l(_S_T) : i++<120 && setTimeout(f, 600)},
-			H = d.getElementsByTagName('head'),
-			h = H && H[0] || d.documentElement;
-		s.async = true;
-		s.src = '//counter.personyze.com/stat-track-lib.js';
-		s.onload = s.onreadystatechange = f;
-		h.appendChild(c);
-		h.appendChild(s);
-		if (c.styleSheet) c.styleSheet.cssText = css;
-		else c.appendChild(d.createTextNode(css));
-		if (u) f();
-		setTimeout(r, 2000);
-	})(document, 'body {visibility:hidden}');
-</script>
-
 <head>
   <title>MarsGx Profile</title>
   <meta charset="utf-8">
@@ -94,6 +68,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ebebeb;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("test3.jpg");
   font-family: Arial;
   font-size: 12px;
   color: #363636;
@@ -142,7 +119,7 @@ li {
 }
 </style>
 <!-- This code allows to change background image -->
-<script>
+<!--<script>
     $(switchBackground);
     var oFReader = new FileReader(),
         rFilter = /^(?:image\/bmp|image\/cis\-cod|image\/gif|image\/ief|image\/jpeg|image\/jpeg|image\/jpeg|image\/pipeg|image\/png|image\/svg\+xml|image\/tiff|image\/x\-cmu\-raster|image\/x\-cmx|image\/x\-icon|image\/x\-portable\-anymap|image\/x\-portable\-bitmap|image\/x\-portable\-graymap|image\/x\-portable\-pixmap|image\/x\-rgb|image\/x\-xbitmap|image\/x\-xpixmap|image\/x\-xwindowdump)$/i;
@@ -163,7 +140,7 @@ li {
       oFReader.readAsDataURL(oFile);
     }
 	
-</script>
+</script>-->
 <script>
 $(function () {    
     $('.delete').click(function () {
@@ -188,8 +165,7 @@ $(function () {
 });
 </script>
 
-<body background="imagebackground.jpg">
-
+<body>
 <?php
 session_start();
 if(!isset($_SESSION['username'])){
@@ -270,7 +246,21 @@ function closeNav() {
    
 
 ?>
-<img src="<?php echo $picture_to_show; ?>"  width="35" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <img id="profileImage" src="<?php echo $picture_to_show; ?>"  width="35" />
+	<input id="imageUpload" type="file" name="profilePhoto" placeholder="Photo" required="" capture>
+	<style type="text/css">
+		#imageUpload
+		{
+			display:none;
+		}
+		#profileImage 
+		{
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+	</script>
 
 
 	<!--
@@ -291,7 +281,7 @@ function closeNav() {
       <li role="presentation" class="divider"></li>
       <li role="presentation"><a align="left" role="menuitem" tabindex="-1" href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
 		<li role="presentation" class="divider"></li>
-	  <li role="presentation"><input class="custom-file-input" role="menuitem" id="changeBackground" type="file" onchange="loadImageFile(this)"></li>
+	 <!-- <li role="presentation"><input class="custom-file-input" role="menuitem" id="changeBackground" type="file" onchange="loadImageFile(this)"></li>-->
     </ul>
   </div>
 
@@ -342,7 +332,7 @@ $("#btn").click( function() {
     });
 }
 </script>
-<div class="column">
+<div class="column" style="center">
 	<div class="flex-item" sportsid="sports"></div>
 <ul style="list-style-type:none">
 	<h2>Sports</h2>	
