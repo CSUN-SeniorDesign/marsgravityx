@@ -5,27 +5,14 @@
 <title>
 SignUp | MGX
 </title>
-<style type="text/css">
-.form {
-	font-family: Impact, Charcoal, sans-serif;
-}
+<!--Added the nav bar-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="CSSFiles//LogRegSetChange.css">
 
-h2{
-	font-size: 50px;
-	text-align: center;
-	margin-top: 230px;
-	margin-right: 35px;
-	font-family: Georgia, serif;
-}
-
-.auto-style1 {
-	margin-left: 500px;
-	
-}
-.auto-style2 {
-	margin-left: 95px;
-}
-</style>
 </head>
 
 <script  src="JSFiles//registration.js"></script>
@@ -73,34 +60,43 @@ VALUES ('".$firstname."', '".$lastname."', '".$username."', '".$password."', '".
         }
   } 
   ?>
+<!--added the navbar codes-->
+<header>
+<nav class="navbar navbar-expand-sm bg-light navbar-light ">
+  <ul class="navbar-nav">
+	<li class="nav-item active">
+  		<a href="http://marsgx.com"><img src="logo.png" style="width:70px; height:60px;"></img></a>
+  	</li>
+    <li class="nav-item active">
+      <a class="nav-link" href="http://www.marsgx.com" style="font-size:25px;">MarsGravityX</a>
+    </li>
+  </ul>
+</nav>	
+
 <div class = "register"> 
-
-<p class ="SignUp">
-
-<h2> SignUp</h2>
-
-</p>
- 
 <div class="form">
 <form name="registration" action="registration.php" onsubmit="return validateform();" method="POST">
 <div class="auto-style1" style="height: 220px">
 	<div class="signup">	
-	
-<input type="text" name="firstname" placeholder="First Name" class="auto-style" style="width: 300px" /> <br><br>
-<input type="text" name="lastname" placeholder="Last Name" class="auto-style3" style="width: 300px" />&nbsp;<br><br>
-<input type="username" name="username" placeholder="Username" class="auto-style" style="width: 298px" /><br><br>
-<input type="password" name="password" placeholder="Password" style="width: 300px" /><br><br>
-<input type="tel" name="phonenumber" id="phonenumber" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="Phone Number (format: xxx-xxx-xxxx)" style="width: 300px"><br><br>
+<!--Added the signup title here to make it snap into place-->
+<p class ="SignUp">
+<h2> SignUp</h2>
+</p>
+<br>
+First Name:&nbsp;<input type="text" name="firstname" placeholder="First Name" class="auto-style" style="width: 300px" /> <br><br>
+Last Name:&nbsp;<input type="text" name="lastname" placeholder="Last Name" class="auto-style3" style="width: 300px" />&nbsp;<br><br>
+Username:&nbsp;<input type="username" name="username" placeholder="Username" class="auto-style" style="width: 298px" /><br><br>
+Password:&nbsp;&nbsp;<input type="password" name="password" placeholder="Password" style="width: 300px" /><br><br>
+Phone #:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" name="phonenumber" id="phonenumber" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="Phone Number (format: xxx-xxx-xxxx)" style="width: 300px"><br><br>
+<form action="" method="post">
+		Date of Birth:&nbsp;
+<input type ="date" name="bday" required>
+</form>
+<br><br>
 
-	<form action="" method="post">
-		Date of Birth:
-		<input type ="date" name="bday" required>
-	</form>
 <input type="submit" name="submit" value="Register" class="auto-style2" style="width: 122px; background: black; color: #FFFFFF; border: #800000; height: 31px; font-family: 'Georgia', 'Arial Narrow', Arial, sans-serif" /> </div>
-	</form>
+</form>
+
 </div>
-
 </body>
-
-
 </html>
