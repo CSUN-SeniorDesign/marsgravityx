@@ -1,0 +1,38 @@
+/*css file for formatting the forms of Login, registration, changePW and settings' page*/
+.form {
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+h2{
+	font-size: 50px;
+	text-align: left;
+	margin-top: 230px;
+	margin-right: 35px;
+	font-family: Georgia, serif;
+}
+
+.auto-style1 {
+	margin-left: 500px;
+	
+}
+.auto-style2 {
+	margin-left: 95px;
+}
+
+nav {
+ height: 100px;
+}
+ 
+ul.navbar-nav li{
+ text-align: center;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    background: rgba(255, 255, 255, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  	opacity: 0.9;
+}

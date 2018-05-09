@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Home | MGX </title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  opacity: 0.5;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+h1{
+text-align:center;
+}
+
+</style>
+</head>
+<body>
+
+
+<video autoplay muted loop id="myVideo">
+  <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+<!--ADDED THIS STYLING HERE FOR THE NAV BAR FOR BETTER POSITIONING -->
+<nav class="navbar navbar-expand-sm bg-light navbar-light" style="padding-bottom: 1px; height: 51px;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <ul class="navbar-nav">
+  <li class="nav-item active">
+                <a href="http://marsgx.com"><img src="logo.png" style="width:60px; height:43px;""></img></a>
+        </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="http://www.marsgx.com">MarsGravityX</a>
+    </li>
+    &nbsp;&nbsp;
+    <li class="nav-item active">
+      <a class="nav-link" href="about.html">About Us</a>
+    </li>&nbsp;
+    <li class="nav-item active">
+      <a class="nav-link" href="contact.html">Contact Us</a>
+    </li>&nbsp;
+    <li class="nav-item active">
+      <a class="nav-link disabled" href="termsconditions.html" style="width: 160px;">Terms& Conditions</a>
+    </li>&nbsp;
+  <li class="nav-item active">
+      <a class="nav-link disabled" href="privacypolicy.html">PrivacyPolicy</a>
+    </li>
+ &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+      <li class="nav-item active">
+      <a class="nav-link" href="login.php"><i><b>Login</b></i></a>
+    </li>
+     &nbsp;&nbsp;&nbsp;&nbsp;
+    <li class="nav-item active">
+      <a class="nav-link" href="registration.php"><i><b>SignUp</b></i></a>
+    </li>
+  </ul>
+</nav>  
+</div>
+
+<script src="JSFiles//livebackground.js"></script>
+
+</body>
+</html>

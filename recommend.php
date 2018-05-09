@@ -21,7 +21,6 @@
 
 
 <?php
-
 	$dbcon = pg_connect($recs) or die ("Cannot connect");
 	// Count number of clicks
 	/*if($_POST['sportsid'] > 0) {
@@ -85,7 +84,6 @@
 			"<a href=\"\\0\">\\0</a>", $value);
 		echo ($value) . "<br />";
 	} echo "<br>";
-
 	$newsColumn = pg_fetch_all_columns($news);
 	foreach($newsColumn as $key => $value) {
 		$value = preg_replace("~[[:alpha:]]+://[^<>[:space:]]+[[:alnum:]/]~", 
@@ -116,5 +114,3 @@
 </div>
  </body>
 </html> 
-  
-   
