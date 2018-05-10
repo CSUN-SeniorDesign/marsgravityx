@@ -1,6 +1,5 @@
 <?php
 include("../crack/db.php");
-
 session_start();
 $dbcon = pg_connect($recs) or die ("Cannot connect");
 $user_check=$_SESSION['username'];

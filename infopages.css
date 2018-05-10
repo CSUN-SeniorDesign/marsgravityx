@@ -1,0 +1,41 @@
+nav {
+ height: 100px;
+}
+ 
+ul.navbar-nav li{
+ text-align: center;
+}
+
+h2{
+color:white;
+
+}
+
+#i  {
+color:white;
+font-family: "Times New Roman", Times, serif;
+font-size: 17px;
+text-align: justify;
+}
+
+.auto-style1 {
+	margin-top: 20px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+footer{
+	color: white;
+	background-color:black;
+	text-align:center;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  	opacity: 0.5;
+}
